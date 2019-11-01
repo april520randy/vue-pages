@@ -12,7 +12,7 @@ export default {
   
   methods:{
     gotomobile(){
-      window.location.href = '/mobile'
+      window.location.href = process.env.BASE_URL+'mobile'
     }
   }
 }
