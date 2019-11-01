@@ -8,6 +8,7 @@ module.exports = {
     },
     mobile: {
       entry: 'src/mobile/main.js',
+      template:'public/mobile.html',
       title: 'mobile-index'
     }
   }
