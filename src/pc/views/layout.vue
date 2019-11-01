@@ -9,11 +9,10 @@
 </template>
 <script>
 export default {
-  
-  methods:{
-    gotomobile(){
-      window.location.href = process.env.BASE_URL+'mobile'
+  methods: {
+    gotomobile() {
+      window.location.href = process.env.BASE_URL + "mobile";
     }
   }
-}
+};
 </script>

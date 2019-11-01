@@ -8,9 +8,12 @@
   <link rel="icon" href="/favicon.ico">
   <title><%= htmlWebpackPlugin.options.title %></title>
   <script>
-    if (window.navigator.userAgent.toString().search(
-      /(iPhone|iPod|Android|ios|Windows Phone|mobile|iPad|SymbianOS)/i) !== -1) {
-      var href = window.location.host + '/mobile'
+    function isMobile() {
+      return navigator.userAgent.search(/(iPhone|iPod|Android|ios|Windows Phone|mobile|iPad|SymbianOS)/i) !== -1
+    }
+    if (isMobile && !location.href.includes('/mobile')) {
+      var href = 'http://' + window.location.host + '/mobile'
+      window.location.href = href
     }
   </script>
 </head>
