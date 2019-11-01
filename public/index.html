@@ -11,9 +11,8 @@
     function isMobile() {
       return navigator.userAgent.search(/(iPhone|iPod|Android|ios|Windows Phone|mobile|iPad|SymbianOS)/i) !== -1
     }
-    if (isMobile && !location.href.includes('/mobile')) {
-      var href = 'http://' + window.location.host + '/mobile'
-      window.location.href = href
+    if (isMobile() && !location.href.includes('mobile')) {
+      window.location.href = '<%= BASE_URL %>mobile'
     }
   </script>
 </head>
