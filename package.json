@@ -9,7 +9,6 @@
     "build":"vue-cli-service build",
     "pbuild": "vue-cli-service build --mode prod",
     "dbuild": "vue-cli-service build --mode dev"
-
   },
   "dependencies": {
     "core-js": "^3.3.2",

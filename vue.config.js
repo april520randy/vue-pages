@@ -1,5 +1,5 @@
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'production' ? '/learn-vue/' : '/',
+  publicPath: process.env.NODE_ENV === 'production' ? '/vue-pages/dist/' : '/',
   assetsDir: 'static',
   pages: {
     index: {
